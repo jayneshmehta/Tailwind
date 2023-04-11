@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+    </style>
+  </head>
+  <body>
+    <nav class="flex  z-50 sticky top-0 left-0 w-full md:h-40 flex-nowrap border-b-2 bg-white py-8 justify-center"
+    data-te-navbar-ref>
+  <div class=" w-full flex-wrap px-6">
+    <div class="flex border-b-2 border-white ">
+      <button
+      class="block border-0 bg-transparent py-2 px-2.5  hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 md:hidden"
+      type="button"
+      data-te-collapse-init
+      data-te-target="#navbarSupportedContent3"
+      aria-controls="navbarSupportedContent3"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <img class="w-10 " src="https://www.svgrepo.com/show/471670/menu-02.svg" alt="">
+    </button>
+    <img class="md:hidden w-36 ml-10" src="Screenshot from 2023-02-25 12-00-19.png"   alt="">
+
+    </div>
+    
+
+    <div class="hidden md:block align-center flex-grow justify-center items-center  lg:!flex lg:basis-auto"
+      id="navbarSupportedContent3"
+      data-te-collapse-item>
+      <a class=" justify-center" href="#">
+        <img class="w-56 hidden md:block " src="Screenshot from 2023-02-25 12-00-19.png" alt="logo">
+      </a>
+ 
+
+
+      <ul class=" flex flex-col ml-10 font-medium md:flex-row "
+        data-te-navbar-nav-ref>
+        <li class="md:px-2  py-2 md:py-0  hover:text-cyan-400" data-te-nav-item-ref>
+          <a
+            class="mx-7 lg:px-2 uppercase"
+            href="#"
+            >Home</a>
+        </li>
+         
+        <li class="lg:pr-2  py-2 md:py-0 " data-te-nav-item-ref>
+          <a
+          class="flex hover:text-cyan-400 md:mx-7 items-center whitespace-nowrap rounded0 uppercase leading-normal text-black"
+          href="#"
+          type="button"
+          id="dropdownMenuButton2"
+          data-te-dropdown-toggle-ref
+          aria-expanded="false"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+            blogs
+          <span class="md:ml-2 w-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+        <ul
+          class=" float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+          aria-labelledby="dropdownMenuButton2"
+          data-te-dropdown-menu-ref>
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+              href="#"
+              data-te-dropdown-item-ref
+              >Action</a
+            >
+          </li>
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+              href="#"
+              data-te-dropdown-item-ref
+              >Another action</a
+            >
+          </li>
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+              href="#"
+              data-te-dropdown-item-ref
+              >Something else here</a
+            >
+          </li>
+          
+        </ul>
+        </li>
+
+
+
+        <li class="lg:pr-2 py-2 md:py-0" data-te-nav-item-ref>
+          <a
+          class="flex  md:mx-5 hover:text-cyan-400 items-center whitespace-nowrap rounded bg-primary font-medium uppercase leading-normal text-black"
+          href="#"
+          type="button"
+          id="dropdownMenuButton2"
+          data-te-dropdown-toggle-ref
+          aria-expanded="false"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+            Features
+          <span class="ml-2 w-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+        <ul
+          class="float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+          aria-labelledby="dropdownMenuButton2"
+          data-te-dropdown-menu-ref>
+          <li>
+            <a
+              class="block w-full  whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+              href="#"
+              data-te-dropdown-item-ref
+              >Action</a
+            >
+          </li>
+          <li >
+            <a
+              class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+              href="#"
+              data-te-dropdown-item-ref
+              >Another action</a
+            >
+          </li>
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+              href="#"
+              data-te-dropdown-item-ref
+              >Something else here</a
+            >
+          </li>
+          
+        </ul>
+        </li>
+        
+        
+        <li  class="lg:pr-2 py-2 md:py-0" >
+        <a class="flex md:mx-4 hover:text-cyan-400 items-center whitespace-nowrap rounded bg-primary font-medium uppercase leading-normal text-black"
+        href="#"
+        type="button"
+        id="dropdownMenuButton2"
+        data-te-dropdown-toggle-ref
+        aria-expanded="false"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        Categories
+        <span class="ml-2 w-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-5 w-5">
+            <path
+              fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </a>
+      <ul
+        class=" float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+        aria-labelledby="dropdownMenuButton2"
+        data-te-dropdown-menu-ref>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+            href="#"
+            data-te-dropdown-item-ref
+            >Action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+            href="#"
+            data-te-dropdown-item-ref
+            >Another action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+            href="#"
+            data-te-dropdown-item-ref
+            >Something else here</a
+          >
+          </li>
+        </ul>
+      </li>
+      <li class="lg:px-2 py-2 md:py-0" data-te-nav-item-ref>
+        <a
+          class=" hover:text-cyan-400  md:mx-5  disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 uppercase"
+          aria-current="page"
+          href="#"
+          data-te-nav-link-ref
+          >About</a
+        >
+      </li>
+      <li class="lg:px-2 my-2 md:my-0 md:ml-5" data-te-nav-item-ref>
+        <a
+          class=" hover:text-cyan-400 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 uppercase"
+          aria-current="page"
+          href="#"
+          data-te-nav-link-ref
+          >Contact</a
+        >
+      </li>
+      
+
+      <li  class="lg:pr-2 py-2 md:py-0">
+        <a
+        class="flex hover:text-cyan-400   md:mx-5  items-center whitespace-nowrap rounded bg-primary px-2 pb-2 font-medium uppercase leading-normal text-black"
+        href="#"
+        type="button"
+        id="dropdownMenuButton2"
+        data-te-dropdown-toggle-ref
+        aria-expanded="false"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        Shop
+        <span class="ml-2 w-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-5 w-5">
+            <path
+              fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </a>
+      <ul
+        class=" float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+        aria-labelledby="dropdownMenuButton2"
+        data-te-dropdown-menu-ref>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+            href="#"
+            data-te-dropdown-item-ref
+            >Action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+            href="#"
+            data-te-dropdown-item-ref
+            >Another action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+            href="#"
+            data-te-dropdown-item-ref
+            >Something else here</a
+          >
+          </li>
+        </ul>
+      </li>
+      <li class="lg:px-2 py-2 md:py-0 hover:text-cyan-400" data-te-nav-item-ref>
+        <a
+          class=" md:mx-5 lg:px-2 uppercase"
+          aria-current="page"
+          href="#" data-te-nav-link-ref
+          >Portfolio</a
+        >
+      </li>
+      </ul>
+    
+    </div>
+    
+  </div>
+</nav>
+
+<section>
+  <div class="md:hidden flex overflow-x-auto gap-5 p-5 bg-[#e7f2ed]">
+    <img src="sec1p1.png" alt="">
+    <img src="sec1p2.png" alt="">
+    <img src="sec1p3.png" alt="">
+  </div>
+
+  <div class="pb-20" style="background-color: #e7f2ed;" >
+   <div class="hidden w-100 md:grid md:px-40 md:grid-cols-3 ">
+    <div class="md:col-span-1">
+      <div class="md:mt-40 flex justify-center">
+        <img src="sec1p1.png" alt="">
+      </div>
+    </div>
+
+
+      <div class="block text-center md:col-span-1">
+        <div class="md:mt-16 flex justify-center">
+          <img src="sec1p2.png" alt="">
+        </div>
+          
+      </div>
+
+
+      <div class="md:col-span-1">
+        <div class="md:mt-40 flex justify-center" >
+          <img src="sec1p3.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="  text-center ">
+      <div>
+      <p class="text-2xl p-3 pt-4 uppercase" style="font-family: 'Gloock', serif;">
+        <em class=" font-serif"  >HEY THERE</em>  
+      </p>
+     </div>
+     <div class="">
+      <p class=" text-7xl  font-mono  text-black" style="font-family: 'Gloock', serif;" >
+        I'm Haus
+      </p>
+     </div> 
+    </div>     
+
+
+      <div class="text-center  bold-none px-4 md:px-56 md:text-xl mt-8 mx-10 " style="font-family: 'Gloock', serif;">
+        <p class="tracking-widest">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam recusandae repellendus ducimus voluptatum quisquam est deleniti sapiente quas iusto consequatur ab ad, incidunt numquam similique fugiat quae eaque nihil.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam recusandae repellendus ducimus voluptatum 
+        </p>
+      </div>
+      <div class="mt-5 flex justify-center" >
+        <button class="bg-transparent text-2xl border-2 flex align-content-center text-black  hover:text-white hover:bg-amber-300 uppercase px-6 py-2" style="font-family: 'Gloock', serif;">read the hole story </button>
+      </div>
+    </div>
+
+</section>
+
+<section >
+  <div class="grid md:grid-cols-3 md:px-40 py-10" style="background-color:#f2f2e6 " >
+    <div class=" col-span-1 border-r-2 md:border-slate-600 py-10 md:py-20  ">
+      <div class=" flex justify-center">
+        <img src="Sec2p1.png" alt="">
+      </div>
+    </div>
+    <div class=" md:col-span-2 md:py-20">
+     <div>
+      <p class="text-2xl md:text-5xl pt-9 pl-9 tracking-widest" style="font-family: 'Gloock', serif;">
+        Condimentum Magna Vel Sodales Mollis Nisl Nibh Ornare Eros
+      </p>
+      <p class=" border-2 m-8  border-sky-700 w-24"></p>
+     </div>
+    
+     <div class="text-muted">
+      <p class=" text-2xl p-9 tracking-widest" style="font-family: 'Gloock', serif; color: #777777;">
+        Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus. Aenean vitae arcu auctor, imperdiet nisl quis interdum lacus.
+      </p>
+     </div> 
+     <div class="mt-1 flex pl-9  " >
+      <button class="bg-transparent text-2xl border-2 flex align-content-center text-black  hover:text-white hover:bg-amber-300 uppercase px-7 py-3" style="font-family: 'Gloock', serif;">GET STARTED</button>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  
+  <div class="grid md:grid-cols-3 md:py-16 md:px-48">
+
+    
+
+    <div class="md:col-span-1 ">
+      <div class="relative overflow-hidden p-10 ">
+        <img src="sec3p1.png" alt="" class="object-cover w-full h-full " />
+        <div class="absolute  hidden md:block p-6 md:top-36 md:left-32 hover:left-0 hover:w-full bg-white text-sky-900 text-2xl text-center leading-4 uppercase">Architecture</div>
+      </div>
+      <div class="relative overflow-hidden p-10 ">
+        <img src="sec3p33.png" alt="" class="object-cover w-full h-full bg-blend-lighten hover:bg-blend-darken" />
+        <div class="absolute hidden md:block  p-6 md:top-36 md:left-32 hover:left-0 hover:w-full bg-white text-sky-900 text-2xl text-center leading-4 uppercase">Photography</div>
+      </div>
+    </div>
+      
+      <div class="hidden md:block  md:col-span-1 ">
+        <p class="text-sky-900 px-10 text-2xl text-center uppercase md:pt-32 tracking-wider" style="font-family: 'Gloock', serif;">The portfolio</p>
+        <p class="text-sky-900 text-4xl md:text-6xl lg:text-8xl px-10 flex text-center" style="font-family: 'Gloock', serif;">View Recent work</p>
+        <div class="mt-1 flex pt-3 justify-center" >
+          <button class="bg-transparent text-2xl border-2 border-sky-900 flex align-content-center text-sky-900  hover:text-white hover:bg-sky-900 uppercase px-7 py-3" style="font-family: 'Gloock', serif;">Explore</button>
+        </div>
+      </div>
+      <div class="col-span-1 ">
+        <div class="relative overflow-hidden p-10">
+          <img src="sec3p2.png" alt="Avatar" class="object-cover w-full h-full " />
+          <div class="absolute hidden md:block  p-6 md:top-36 md:left-44 hover:left-0 hover:w-full bg-white text-sky-900 text-2xl text-center leading-4 uppercase">Interior</div>
+        </div>
+        <div class="relative overflow-hidden p-10">
+          <img src="sec3p4.png" alt="" class="object-cover w-full h-full " />
+          <div class="absolute hidden md:block p-6 md:top-36 md:left-44 hover:left-0 hover:w-full bg-white text-sky-900 text-2xl text-center leading-4 uppercase">Animal</div>
+        </div>
+      </div>
+  </div>
+  
+</section>
+
+
+<section class="hidden md:block">
+  <div class="grid md:grid-cols-2 md:px-40 justify-center" style="background-color: #e7f2ed">
+    <div class="grid col-span-1 md:py-44 ">
+      <div>
+        <p class="text-blue-800 text-4xl">Tools For Creatives</p>
+      </div>
+      <div>
+        <p class="border-b-2 border-blue-900 w-24 "></p>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo 
+          nemo voluptatem, minus debitis omnis veritatis cum, impedit ex repudiandae 
+          reiciendis. Cumque ex, iusto ipsa velit soluta numquam eveniet ipsam.</p>  
+      </div>
+        <div class="mt-1 flex" >
+          <button class=" text-2xl border-2 
+           text-black  hover:text-white hover:bg-yellow-200 uppercase px-2" 
+           style="font-family: 'Gloock', serif; border-color: #d0d0a7;">Go to the blog</button>
+        </div>
+    </div>
+    <div class="grid col-span-1 py- pt-20">
+      <img src="sec4.png" alt="">
+    </div>
+  </div>
+</section>
+
+
+<section class="md:hidden ">
+  <div class="sm:grid-cols-1  grid md:grid-cols-2 md:px-40 justify-center" style="background-color: #e7f2ed">
+    <div class="grid col-span-1 md:py-10 pt-20">
+      <img src="sec4.png" alt="">
+    </div>
+    <div class="grid col-span-1 p-10 pb-20">
+      <div>
+        <p class="text-blue-800 text-3xl pb-2">Tools For Creatives</p>
+      </div>
+      <div>
+        <p class="border-b-2 border-blue-900 w-24  "></p>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo 
+          nemo voluptatem, minus debitis omnis veritatis cum, impedit ex repudiandae 
+          reiciendis. Cumque ex, iusto ipsa velit soluta numquam eveniet ipsam.</p>  
+      </div>
+        <div class="mt-1 flex">
+          <button class=" text-2xl border-2 
+           text-black  hover:text-white hover:bg-yellow-200 uppercase px-2" 
+           style="font-family: 'Gloock', serif; border-color: #d0d0a7;">Go to the blog</button>
+        </div>
+    </div>
+   
+  </div>
+</section>
+
+<section class=" md:px-40 md:py-24">
+  <div class=" md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-10" >
+    <div class="my-10 md:my-6">
+      <div class="relative border border-yellow-500 lg:col-span-1 p-6 justify-center hover:bg-yellow-100">
+        <p class="py-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum,
+          id sequi error similique delectus incidunt, 
+        ullam molestias reprehenderit voluptas rerum et sed cum haru"</p>
+        <div class="absolute -bottom-14  left-24 md:left-48  border-yellow-500  rounded-full">
+          <img class="rounded-full p-2 bg-white h-28 w-28 border-2 border-spacing-8 border-yellow-500" 
+          src="https://images.pexels.com/photos/371985/pexels-photo-371985.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="">
+          </div>
+      </div>
+      <div class="flex text-center justify-center mt-20">
+        <span class="uppercase">Client name here</span>
+      </div>
+    </div>
+      
+    <div class="my-10 md:my-6">
+      <div class="relative border border-yellow-500 lg:col-span-1 p-6  justify-center hover:bg-yellow-100">
+        <p class="py-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum,
+          id sequi error similique delectus incidunt, 
+        ullam molestias reprehenderit voluptas rerum et sed cum haru"</p>
+        <div class="absolute -bottom-14  left-24 md:left-48  border-yellow-500  rounded-full">
+          <img class="rounded-full p-2 bg-white h-28 w-28 border-2 border-spacing-8 border-yellow-500" 
+          src="https://images.pexels.com/photos/371985/pexels-photo-371985.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="">
+          </div>
+      </div>
+      <div class="flex text-center justify-center mt-20">
+        <span class="uppercase">Client name here</span>
+      </div>
+    </div>
+
+    <div class="my-10 md:my-6">
+      <div class="relative border border-yellow-500 lg:col-span-1 p-6 justify-center hover:bg-yellow-100">
+        <p class="py-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum,
+          id sequi error similique delectus incidunt, 
+        ullam molestias reprehenderit voluptas rerum et sed cum haru"</p>
+        <div class="absolute -bottom-14  left-24 md:left-48  border-yellow-500  rounded-full">
+          <img class="rounded-full p-2 bg-white h-28 w-28 border-2 border-spacing-8 border-yellow-500" 
+          src="https://images.pexels.com/photos/371985/pexels-photo-371985.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="">
+          </div>
+      </div>
+      <div class="flex text-center justify-center mt-20">
+        <span class="uppercase">Client name here</span>
+      </div>
+    </div>
+</div>
+</section>
+
+<section class="">
+  <div class="px-10 md:px-40  " style=" background-color: #e7f2ed;">
+     <div class="py-10 md:py-20 flex overflow-x-auto gap-5">
+      <img src="https://images.pexels.com/photos/15391500/pexels-photo-15391500.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+      <img src="https://images.pexels.com/photos/15391500/pexels-photo-15391500.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+      <img src="https://images.pexels.com/photos/15391500/pexels-photo-15391500.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+     </div>
+   </div>
+</section>
+
+<section class="px-10 py-10 md:px-40 md:py-20">
+  <div class="grid md:grid-cols-2 lg:grid-cols-3  gap-5 ">
+
+
+    <div class="col-span-1  border border-yellow-200  hover:bg-green-100">
+      <div class="hidden md:block"> 
+        <img class="w-full" src="sec5.png" alt="">
+      </div>
+      <div class="md:text-center p-4">
+        <p class="uppercase py-2 ">photo</p>
+        <p class="text-2xl">Little know Way To Rid YourSelf</p>
+        <p class="">June 20,2021</p>
+        <p class="hidden md:block p-1  border-b-2 mx-4 border-yellow-200 hover:border-0 ">
+        </p>
+        <p class="p-2 hidden md:block ">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum,
+          id sequi error similique delectus incidunt, 
+        ullam molestias reprehenderit voluptas rerum et sed cum haru"</p>
+          <div class="hidden md:block  m-4 flex justify-center " >
+            <button class=" text-xl border-2 
+             text-black  hover:text-white hover:bg-yellow-200 px-2" 
+             style="font-family: 'Gloock', serif; border-color: #d0d0a7;">Read More</button>
+          </div>
+          </div>
+    </div>
+
+
+    <div class="col-span-1 border hover:bg-green-100  border-yellow-200">
+      <div class="md:text-center p-2">
+        <p class="uppercase py-2 ">photo</p>
+        <p class="text-2xl">Little know Way To Rid YourSelf</p>
+        <p class="">June 20,2021</p>
+        <p class="p-1 hidden md:block border-b-2 mx-4 border-yellow-200 hover:border-0 ">
+        </p>
+        <p class="hidden md:block p-2">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum,
+          id sequi error similique delectus incidunt, 
+        ullam molestias reprehenderit voluptas rerum et 
+        sed cum haru ullam molestias reprehenderit voluptas rerum et sed cum haru"</p>
+          <div class="hidden md:block m-4  flex justify-center " >
+            <button class=" text-xl border-2 
+             text-black  hover:text-white hover:bg-yellow-200 px-2" 
+             style="font-family: 'Gloock', serif; border-color: #d0d0a7;">Read More</button>
+            </div>
+          </div>
+      <div class="hidden md:block"> 
+        <img class="w-full" src="sec5.png" alt="">
+      </div>
+    </div>
+
+
+    <div class=" col-span-1  border border-yellow-200  hover:bg-green-100">
+      <div class="hidden md:block "> 
+        <img class="w-full" src="sec5.png" alt="">
+      </div>
+      <div class="md:text-center p-2">
+        <p class="uppercase md:py-2 ">photo</p>
+        <p class="text-2xl ">Little know Way To Rid YourSelf</p>
+        <p class="">June 20,2021</p>
+        <p class="hidden md:block p-1 border-b-2 mx-4 border-yellow-200 hover:border-0 ">
+        </p>
+        <p class="hidden md:block  p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Rem nihil vero quo, incidunt expedita, vitae ducimus 
+          molestias cumque in quis, minima recusandae officiis et </p>
+          <div class="m-4 flex justify-center " >
+            <button class="hidden md:block  text-xl border-2 
+             text-black  hover:text-white hover:bg-yellow-200 px-2" 
+             style="font-family: 'Gloock', serif; border-color: #d0d0a7;">Read More</button>
+          </div>
+          </div>
+    </div>
+
+    <div class="hidden md:block  col-span-1  border border-yellow-200  hover:bg-green-100">
+     
+      <div class="text-center">
+        <p class="uppercase text-center p-2 ">photo</p>
+        <p class="text-2xl justify-center">Little know Way To Rid YourSelf</p>
+        <p class="">June 20,2021</p>
+        
+        </div>
+        <div> 
+          <img class="w-full" src="sec5.png" alt="">
+        </div>
+        <div>
+        <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Rem nihil vero quo, incidunt expedita, vitae ducimus 
+          molestias cumque in quis, minima recusandae officiis et </p>
+          <div class="m-4 flex justify-center " >
+            <button class=" text-xl border-2 
+             text-black  hover:text-white hover:bg-yellow-200 px-2" 
+             style="font-family: 'Gloock', serif; border-color: #d0d0a7;">Read More</button>
+          </div>
+          </div>
+          </div>
+
+          <div class="hidden md:block col-span-1  border border-yellow-200  hover:bg-green-100">
+     
+            <div class="text-center">
+              <p class="uppercase text-center p-2 ">photo</p>
+              <p class="text-2xl justify-center">Little know Way To Rid YourSelf</p>
+              <p class="">June 20,2021</p>
+              
+              </div>
+              <div> 
+                <img class="w-full" src="sec5.png" alt="">
+              </div>
+              <div>
+              <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Rem nihil vero quo, incidunt expedita, vitae ducimus 
+                molestias cumque in quis, minima recusandae officiis et </p>
+                <div class="m-4 flex justify-center " >
+                  <button class=" text-xl border-2 
+                   text-black  hover:text-white hover:bg-yellow-200 px-2" 
+                   style="font-family: 'Gloock', serif; border-color: #d0d0a7;">Read More</button>
+                </div>
+                </div>
+                </div>
+
+                <div class="hidden md:block col-span-1  border border-yellow-200  hover:bg-green-100">
+     
+                  <div class="text-center">
+                    <p class="uppercase text-center p-2 ">photo</p>
+                    <p class="text-2xl justify-center">Little know Way To Rid YourSelf</p>
+                    <p class="">June 20,2021</p>
+                    
+                    </div>
+                    <div> 
+                      <img class="w-full" src="sec5.png" alt="">
+                    </div>
+                    <div>
+                    <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Rem nihil vero quo, incidunt expedita, vitae ducimus 
+                      molestias cumque in quis, minima recusandae officiis et minima recusandae officiis et </p>
+                      <div class="m-4 flex justify-center " >
+                        <button class=" text-xl border-2 
+                         text-black  hover:text-white hover:bg-yellow-200 px-2" 
+                         style="font-family: 'Gloock', serif; border-color: #d0d0a7;">Read More</button>
+                      </div>
+                      </div>
+                      </div>
+    </div>
+    <div class="hidden md:block  text-center center p-4" >
+      <button class=" text-xl border-2 
+       text-black  hover:text-white uppercase p-2 hover:bg-yellow-200 px-3" 
+       style="font-family: 'Gloock', serif; border-color: #d0d0a7;">View More Posts</button>
+    </div>
+  </div>
+  
+</section>
+
+
+
+<section> 
+  <div class="md:px-28  py-5 px-16 bg-[#E7F2ED]">
+    <h1 class=" text-4xl mt-8 mb-5 text-center">Contact Us</h1>
+  <div class=" grid md:grid-cols-2">
+    <div class="md:p-5">
+      <form>
+        <div class=" mb-6" data-te-input-wrapper-init>
+          <input
+            type="text"
+            class="block  md:w-full rounded border border-[#04282D] bg-transparent py-2 px-3"
+            placeholder="First Name"/>
+        </div>
+        <div class=" mb-6" data-te-input-wrapper-init>
+          <input
+            type="text"
+            class=" block md:w-full rounded border border-[#04282D] bg-transparent py-2 px-3"
+            placeholder="Last Name" />
+      </div>
+      <div class=" mb-6" data-te-input-wrapper-init>
+        <input
+          type="email"
+          class="block  md:w-full rounded border border-[#04282D] bg-transparent py-2 px-3 "
+          placeholder="Email address" />
+      </div>
+      <div class=" mb-6" data-te-input-wrapper-init>
+        <textarea
+          class="peer block min-h-[auto]  md:w-full rounded border border-[#04282D] bg-transparent py-2 px-3 "
+          rows="3"
+          placeholder="Message"></textarea>
+      </div>
+      <button
+      type="button"
+      class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-5 pt-2 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] hover:text-white" style="font-family: 'Playfair Display', serif;">
+      SUBMIT
+    </button>
+    </form>
+   </div>
+    <div class="md:p-5 p-2">
+      <form>
+        <span>Upload File</span>
+        <div class="container mx-auto w-60 md:w-full text-center text-sky-800 border border-dashed border-black h-64">
+          <div class="my-16 ">
+            <img src="https://cdn-icons-png.flaticon.com/512/568/568717.png" class="mx-auto my-2 w-5" alt="1">
+            <p class="font2 ">Drop Your Files Here</p>
+            <p class="font2 ">Or</p>
+            <button
+            type="button"
+            class="inline-block rounded bg-[#E7F2ED] border border-gray-400 px-2   hover:bg-[#E7F2ED]">
+            Browse File
+          </button>
+            <div>
+             
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="md:mx-96 my-10 mx-10" >
+
+  <div class="text-center" >
+    <p class="text-4xl font-bold p-5 text-sky-800" style="font-family: 'Gloock', serif;">FAQ</p>
+  </div>
+  <div id="accordion-collapse" class="my-2" data-accordion="collapse">
+    <h2 id="accordion-collapse-heading-1">
+      <button type="button" class="flex items-center justify-between w-full p-5  text-left border-2 border-sky-800 " data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+        <span> Lorem ipsum dolor sit</span>
+       <img src="https://www.svgrepo.com/show/507823/plus.svg" class="w-10" alt="">
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+      <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe tempore optio ipsa, nam eum incidunt quaerat tempora perferendis, deleniti blanditiis modi non, similique accusantium recusandae fugiat earum sint. Ea, quasi!</p>
+      </div>
+    </div>
+  </div>
+  <div id="accordion-collapse" class="my-2" data-accordion="collapse">
+    <h2 id="accordion-collapse-heading-2">
+      <button type="button" class="flex items-center justify-between w-full p-5  text-left  border border-2 border-sky-800 " data-accordion-target="#accordion-collapse-body-2" aria-expanded="true" aria-controls="accordion-collapse-body-2">
+        <span> Lorem ipsum dolor sit </span>
+       <img src="https://www.svgrepo.com/show/507823/plus.svg" class="w-10" alt="">
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+      <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe tempore optio ipsa, nam eum incidunt quaerat tempora perferendis, deleniti blanditiis modi non, similique accusantium recusandae fugiat earum sint. Ea, quasi!</p>
+      </div>
+    </div>
+  </div>
+  <div id="accordion-collapse" class="my-2" data-accordion="collapse">
+    <h2 id="accordion-collapse-heading-3">
+      <button type="button" class="flex items-center justify-between w-full p-5  text-left  border border-2 border-sky-800 " data-accordion-target="#accordion-collapse-body-3" aria-expanded="true" aria-controls="accordion-collapse-body-3">
+        <span> Lorem ipsum dolor sit </span>
+       <img src="https://www.svgrepo.com/show/507823/plus.svg" class="w-10" alt="">
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+      <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe tempore optio ipsa, nam eum incidunt quaerat tempora perferendis, deleniti blanditiis modi non, similique accusantium recusandae fugiat earum sint. Ea, quasi!</p>
+      </div>
+    </div>
+  </div>  
+</div>
+  
+</section>
+
+<section  >
+<div class="md:flex justify-between text-center md:mx-40 py-10"> 
+  <div class=" flex justify-center md:justify-end py-2">
+    <img src="https://www.svgrepo.com/show/506656/facebook.svg" class="w-12 p-2" alt="">
+    <img src="https://www.svgrepo.com/show/506517/linkedin.svg" class="w-12 p-2" alt="">
+    <img src="https://www.svgrepo.com/show/506685/twitter.svg" class="w-12 p-2" alt="">
+    <img src="https://www.svgrepo.com/show/506668/instagram.svg" class="w-12 p-2" alt="">
+    <img src="https://www.svgrepo.com/show/506687/youtube-play.svg" class="w-12 p-2" alt="">
+  </div>
+  
+  <div class=" text-sky-800 capitalize text-lg py-4 md:py-0  " style="font-family: 'Gloock', serif;">Tearms & Condition | Privacy policy </div>
+  <div>
+    <span class=" text-sky-800 capitalize text-lg" style="font-family: 'Gloock', serif;">&#169; Haus Gitschberg  
+    </span>   
+   </div>
+  </div>
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
